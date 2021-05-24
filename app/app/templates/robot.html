@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Robot Launcher</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    <main class="px-3">
+        <h1>Robot Launcher.</h1>
+
+        <form action="/robot/youtube" method="POST">
+
+            <fieldset>
+                <p><label for="robotcommand">Paste here the robot json</label></p>
+                <textarea id="robotcommand" name="robotcommand" rows="5" cols="33">{"type": "conspi", "watchNext": "15", "watchFromURL": "0", "watchFromHome": "10", "search": "conspi",
+               "watchFromSearch": "5", "watchFromChannel": "5", "watchRecommended": "15", "stopsAt": "5",
+               "social": "like", "interactionPercent": "50",
+               "order": ["home", "next", "search", "channel", "recommended"]}</textarea>
+</fieldset>
+ <fieldset>
+            <input type="submit" value="run robot"/>
+                </fieldset>
+        </form>
+
+
+    </main>
+
+    <footer class="mt-auto text-white-50">
+        <p>(c) The stream for good team</p>
+    </footer>
+</div>
+
+
+</body>
+</html>
